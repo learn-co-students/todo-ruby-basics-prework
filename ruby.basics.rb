@@ -55,25 +55,29 @@ end
 # ======================================
 # Start Here - Make these tests pass.
 # ======================================
-
 # 1. 
+test 'that ruby can run code' do
+  assert true
+end
+
+# 2. 
 test 'that ruby has a concept of truth' do 
   assert __
 end
 
-# 2. 
+# 3. 
 test 'that ruby knows math' do
   assert_equal __, 6*7
 end
 
-# 3. 
+# 4. 
 test 'that ruby can remember values with variables' do
   the_number_one = __
 
   assert_equal the_number_one, 1 
 end
 
-# 4. 
+# 5. 
 test 'that ruby variables are references to values' do
   original = 1
   reference = original
@@ -83,7 +87,7 @@ test 'that ruby variables are references to values' do
   assert_equal reference, __
 end
 
-# 5. 
+# 6. 
 test 'that ruby has methods' do
   
   class Object
@@ -94,7 +98,7 @@ test 'that ruby has methods' do
   assert respond_to?(:defined_method)
 end
 
-# 6. 
+# 7. 
 test 'that ruby methods can accept arguments' do
   def work(adjective)
     assert_equal adjective, __
@@ -103,21 +107,21 @@ test 'that ruby methods can accept arguments' do
   work("hard")
 end
 
-# 7. 
+# 8. 
 test 'that ruby methods can accept multiple arguments' do
   # define a_method_with two arguments here
 
   assert a_method_with("two", "arguments")
 end
 
-# 8. 
+# 9. 
 test 'that ruby methods return values' do
   # define a method named "be" that returns "Nice"
 
   assert_equal be, "Nice"
 end
 
-# 9. 
+# 10. 
 test 'that return values are always the last line of code' do
   def learning
     "beginner"
@@ -127,7 +131,7 @@ test 'that return values are always the last line of code' do
   assert_equal learning, __
 end
 
-# 10.
+# 11.
 test 'that method arguments can also be optional' do
   def keep(state = "calm")
     state
