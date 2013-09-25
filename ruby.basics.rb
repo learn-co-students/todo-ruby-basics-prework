@@ -1,3 +1,10 @@
+# Download this file:
+# https://gist.github.com/aviflombaum/28534c5d69edd2439a7d/download
+
+# Run it from your terminal with: 
+# ruby ruby.basics.rb
+# (Just make sure you are in the right directory)
+
 # ======================================
 # Ignore All This Code
 # ======================================
