@@ -64,9 +64,12 @@ describe "ruby" do
 
   # 8. 
   it 'has methods that can accept multiple arguments' do
-    # define a_method_with two arguments here
+    class Object
+      # define a method named "a_method_with" that takes two arguments
+      # within this class.
+    end
 
-    expect(a_method_with("two", "arguments")).to_not raise_error(ArgumentError)
+    expect(Object).to respond_to(:a_method_with).with(2).arguments
   end
 
   # 9. 
