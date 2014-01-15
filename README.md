@@ -1,14 +1,14 @@
 ---
-  tags: todo
+  tags: todo, basics, tdd
   languages: ruby
 ---
 
 # TODO: Ruby Basics
 
-Clone this repository.
+## Instructions
 
-Run the script from your terminal with: 
-ruby ruby_basics.rb
+1. Clone this repository.
 
-(Just make sure you are in the right directory)
+2. Run the script from your terminal with: `ruby ruby_basics.rb`. (Make sure you are in the right directory!)
 
+3. Follow the interactive readme.
