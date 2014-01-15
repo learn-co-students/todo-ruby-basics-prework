@@ -1,3 +1,5 @@
+# Ignore the code in this file!
+
 class CLIReadme
 
   def run
