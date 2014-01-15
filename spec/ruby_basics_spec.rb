@@ -74,7 +74,8 @@ describe "ruby" do
   it 'has methods that can accept multiple arguments' do
 
     class Object
-      # define a_method_with two arguments here
+      # define a method named "a_method_with" that takes two arguments
+      # within this class.
       def a_method_with(two, arguments)
       end
     end
