@@ -1,6 +1,7 @@
 class CLIReadme
 
   def run
+    system("clear")
     puts "Welcome to your Ruby Basics Todo!"
     puts "---------------------------------"
     puts "Press enter to continue..."
