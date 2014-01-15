@@ -1,134 +1,45 @@
-# ======================================
-# Ignore All This Code
-# ======================================
+class CLIReadme
 
-@tests = 0
-
-def test(title, &b)
-  @tests += 1
-  begin
-    if b
-      result = b.call
-      if result.is_a?(Array)
-        puts "#{@tests}. fail: #{title}"
-        puts "      expected #{result.first} to equal #{result.last}"
-      elsif result
-        puts "#{@tests}. pass: #{title}"
-      else
-        puts "#{@tests}. fail: #{title}"
-      end
-    else
-      puts "#{@tests}. pending: #{title}"
+  def run
+    puts "Welcome to your Ruby Basics Todo!"
+    puts "---------------------------------"
+    puts "Press enter to continue..."
+    input = gets
+    self.directions.each do |direction|
+      puts direction
+      input = gets
     end
-  rescue => e
-    puts "fail: #{title}"
-    puts e
-  end
-end
 
-def assert(statement)
-  !!statement
-end
+    puts "8. Now, type 'rspec' to run the tests and get started! Have fun!"
+    rspec = gets.chomp
+    while rspec != 'rspec'
+      puts "Type 'rspec'..."
+      rspec = gets.chomp
+    end
 
-def assert_equal(actual, expected)
-  if expected == actual
-    true
-  else
-    [expected, actual]
-  end
-end
-
-class Object
-  def __
-    puts "__ should be replaced with a value or expression to make the test pass."
-    false
-  end
-end
-
-# ======================================
-# Start Here - Make these tests pass.
-# ======================================
-# 1. 
-test 'that ruby can run code' do
-  assert true
-end
-
-# 2. 
-test 'that ruby has a concept of truth' do 
-  assert __
-end
-
-# 3. 
-test 'that ruby knows math' do
-  assert_equal __, 6*7
-end
-
-# 4. 
-test 'that ruby can remember values with variables' do
-  the_number_one = __
-
-  assert_equal the_number_one, 1 
-end
-
-# 5. 
-test 'that ruby variables are references to values' do
-  original = 1
-  reference = original
-
-  original = 2
-
-  assert_equal reference, __
-end
-
-# 6. 
-test 'that ruby has methods' do
-  
-  class Object
-    # define a method named "defined_method"
-    # within this class.
+    system("rspec")
   end
 
-  assert respond_to?(:defined_method)
-end
-
-# 7. 
-test 'that ruby methods can accept arguments' do
-  def work(adjective)
-    assert_equal adjective, __
+  def directions
+    [
+      "1. For this todo, you're going to be reviewing the basics of the Ruby language. 
+          To move on from one step to the next, press Enter. Go ahead, try it now...",
+      "2. This semester (as in all semesters), we're going to be putting a big focus on
+          test driven development. We'll cover it a bunch more later, but in essence, this
+          means that we write tests for our code before actually writing any code.",
+      "3. With that in mind, we'll be discovering the basics of Ruby through the use
+          of tests.",
+      "4. You'll be running tests using the RSpec framework, watching them fail, and
+          then making them pass. It's going to be a ton of fun.",
+      "5. Usually you'll make the tests pass by actually writing code, but in this case
+          you'll be exploring Ruby by altering the tests themselves.",
+      "6. We'll run the tests, see a huge explosion of errors, go fix one of the errors,
+          run the tests again, see slightly less errors and repeat.",
+      "7. Edit the tests in the spec/ruby_basics_spec.rb file."
+    ]
   end
 
-  work("hard")
 end
 
-# 8. 
-test 'that ruby methods can accept multiple arguments' do
-  # define a_method_with two arguments here
-
-  assert a_method_with("two", "arguments")
-end
-
-# 9. 
-test 'that ruby methods return values' do
-  # define a method named "be" that returns "Nice"
-
-  assert_equal be, "Nice"
-end
-
-# 10. 
-test 'that return values are always the last line of code' do
-  def learning
-    "beginner"
-    "expert"
-  end
-
-  assert_equal learning, __
-end
-
-# 11.
-test 'that method arguments can also be optional' do
-  def keep(state = "calm")
-    state
-  end
-
-  assert_equal keep, __
-end
+readme = CLIReadme.new
+readme.run
