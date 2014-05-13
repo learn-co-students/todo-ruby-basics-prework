@@ -1,6 +1,7 @@
 ---
   tags: todo, basics, tdd
   languages: ruby
+  resources: 2
 ---
 
 # TODO: Ruby Basics
@@ -21,3 +22,7 @@ If not, call over a TA.
 3. Run the script from your terminal with: `ruby ruby_basics.rb`. (Make sure you are in the right directory!)
 
 4. Follow the interactive readme.
+
+## Resources
+* [The RSpec Book](http://books.flatironschool.com/books/20) - [1.3 RSpec](http://books.flatironschool.com/books/20), page 25
+* [The RSpec Book](http://books.flatironschool.com/books/20) - [2.2 Hello RSpec](http://books.flatironschool.com/books/20), page 31
