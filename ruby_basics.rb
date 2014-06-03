@@ -13,7 +13,7 @@ class CLIReadme
       input = gets
     end
 
-    puts "8. Now, type 'rspec' to run the tests and get started! Have fun!"
+    puts "8. Now, type 'rspec' to run the tests. Read the output of the failures and how they correspond to code located in spec/ruby_basics_spec.rb and start trying to fix them, one by one. Everytime you make a meaningful change, just re-run rspec with the rspec command."
     rspec = gets.chomp
     while rspec != 'rspec'
       puts "Type 'rspec'..."
