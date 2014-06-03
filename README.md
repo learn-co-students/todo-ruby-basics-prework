@@ -24,5 +24,5 @@ If not, call over a TA.
 4. Follow the interactive readme.
 
 ## Resources
-* [The RSpec Book](http://books.flatironschool.com/books/20) - [1.3 RSpec](http://books.flatironschool.com/books/20), page 25
-* [The RSpec Book](http://books.flatironschool.com/books/20) - [2.2 Hello RSpec](http://books.flatironschool.com/books/20), page 31
+* [The RSpec Book](http://books.flatironschool.com/books/20?page=25) - [1.3 RSpec](http://books.flatironschool.com/books/20?page=25), page 25
+* [The RSpec Book](http://books.flatironschool.com/books/20?page=31) - [2.2 Hello RSpec](http://books.flatironschool.com/books/20?page=31), page 31
