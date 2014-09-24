@@ -1,10 +1,12 @@
 require 'spec_helper'
 
-# Ignore this code
-
+# v Ignore the code below v  ###########################################################
+#
 def __
   raise "__ should be replaced with a value or expression to make the test pass."
 end
+#
+# ^ Ignore the code above ^#############################################################
 
 # Make these tests pass!
 
