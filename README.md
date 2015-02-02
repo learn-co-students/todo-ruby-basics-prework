@@ -13,7 +13,7 @@
 2. From your terminal, type `gem install rspec`. You should see something like:
 
 ```
-Successfully installed rspec-3.1.4
+Successfully installed rspec-3.1.7
 1 gem installed
 ```
 
