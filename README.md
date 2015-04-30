@@ -25,6 +25,3 @@ If not, call over an Instructor.
 
 5. When you're finished, open up a pull request.
 
-## Resources
-* [The RSpec Book](http://books.flatironschool.com/books/20?page=25) - [1.3 RSpec](http://books.flatironschool.com/books/20?page=25), page 25
-* [The RSpec Book](http://books.flatironschool.com/books/20?page=31) - [2.2 Hello RSpec](http://books.flatironschool.com/books/20?page=31), page 31
