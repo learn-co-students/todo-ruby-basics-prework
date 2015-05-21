@@ -17,7 +17,7 @@ Successfully installed rspec-3.1.7
 1 gem installed
 ```
 
-If not, call over an Instructor.
+If not, ask a question in Learn.
 
 3. Run the script from your terminal with: `ruby ruby_basics.rb`. (Make sure you are in the right directory!)
 
