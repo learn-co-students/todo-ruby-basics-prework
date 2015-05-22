@@ -17,7 +17,7 @@ Successfully installed rspec-3.1.7
 1 gem installed
 ```
 
-If not, call over an Instructor.
+If not, ask a question in Learn.
 
 3. Run the script from your terminal with: `ruby ruby_basics.rb`. (Make sure you are in the right directory!)
 
@@ -25,6 +25,5 @@ If not, call over an Instructor.
 
 5. When you're finished, open up a pull request.
 
-## Resources
-* [The RSpec Book](http://books.flatironschool.com/books/20?page=25) - [1.3 RSpec](http://books.flatironschool.com/books/20?page=25), page 25
-* [The RSpec Book](http://books.flatironschool.com/books/20?page=31) - [2.2 Hello RSpec](http://books.flatironschool.com/books/20?page=31), page 31
+Note: We're going to be putting a big focus on test driven development. We'll cover it a bunch more later, but in essence, this means that we write tests for our code before actually writing any code. Usually you'll make the tests pass by actually writing code, but in this case you'll be exploring Ruby by altering the tests themselves in `spec/ruby_basics_spec.rb`.
+

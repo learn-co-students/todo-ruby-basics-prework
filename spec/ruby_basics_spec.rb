@@ -65,6 +65,7 @@ describe "ruby" do
 
   # 7. 
   it 'has methods that can accept arguments' do
+    # Replace the __ below with code to make the test pass
     def work(adjective)
       expect(adjective).to eq("hard")
     end
