@@ -19,16 +19,19 @@ describe "ruby" do
 
   # 2.
   it 'has a concept of truth' do 
+    # Replace the __ below with code to make the test pass
     expect(__)
   end
 
   # 3. 
   it 'knows math' do
+    # Replace the __ below with code to make the test pass
     expect(__).to eq(6*7)
   end
 
   # 4. 
   it 'can remember values with variables' do
+    # Replace the __ below with code to make the test pass
     the_number_one = __
 
     expect(the_number_one).to eq(1) 
@@ -40,7 +43,7 @@ describe "ruby" do
     reference = original
 
     original = 2
-
+    # Replace the __ below with code to make the test pass
     expect(reference).to eq(__)
   end
 
@@ -57,6 +60,7 @@ describe "ruby" do
 
   # 7. 
   it 'has methods that can accept arguments' do
+    # Replace the __ below with code to make the test pass
     def work(adjective)
       expect(adjective).to eq(__)
     end
@@ -88,6 +92,7 @@ describe "ruby" do
       "expert"
     end
 
+    # Replace the __ below with code to make the test pass
     expect(learning).to eq(__)
   end
 
@@ -97,6 +102,7 @@ describe "ruby" do
       state
     end
 
+    # Replace the __ below with code to make the test pass
     expect(keep).to eq(__)
   end
 
