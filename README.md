@@ -13,7 +13,7 @@
 2. From your terminal, type `gem install learn-co`. You should see something like:
 
 ```
-Successfully installed learn-co-*version number*
+Successfully installed learn-co-[version number]
 1 gem installed
 ```
 
