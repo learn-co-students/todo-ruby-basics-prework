@@ -13,14 +13,14 @@ class CLIReadme
       input = gets
     end
 
-    puts "8. Now, type 'rspec' to run the tests. Read the output of the failures and how they correspond to code located in spec/ruby_basics_spec.rb and start trying to fix them, one by one. Everytime you make a meaningful change, just re-run rspec with the rspec command."
-    rspec = gets.chomp
-    while rspec != 'rspec'
-      puts "Type 'rspec'..."
-      rspec = gets.chomp
+    puts "8. Now, type 'learn' to run the tests. Read the output of the failures and how they correspond to code located in spec/ruby_basics_spec.rb and start trying to fix them, one by one. Everytime you make a meaningful change, just re-run learn with the learn command."
+    learn = gets.chomp
+    while learn != 'learn'
+      puts "Type 'learn'..."
+      learn = gets.chomp
     end
 
-    system("rspec")
+    system("learn")
   end
 
   def directions
@@ -32,7 +32,7 @@ class CLIReadme
           means that we write tests for our code before actually writing any code.",
       "3. With that in mind, we'll be discovering the basics of Ruby through the use
           of tests.",
-      "4. You'll be running tests using the RSpec framework, watching them fail, and
+      "4. You'll be running tests using the RSpec framework (by running 'learn' in your terminal), watching them fail, and
           then making them pass. It's going to be a ton of fun!",
       "5. Usually you'll make the tests pass by actually writing code, but in this case
           you'll be exploring Ruby by altering the tests themselves.",
