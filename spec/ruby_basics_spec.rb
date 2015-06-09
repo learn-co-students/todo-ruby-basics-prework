@@ -1,118 +1,68 @@
 require 'spec_helper'
+require_relative '../lib/ruby_basics.rb'
 
-# v Ignore the code below v  ###########################################################
-#
-def __
-  raise "__ should be replaced with a value or expression to make the test pass."
-end
-#
-# ^ Ignore the code above ^#############################################################
-
-# Make these tests pass!
 
 describe "ruby" do
 
-  # 1.
-  it 'can run code' do
-    expect(true)
+  describe "#division" do
+    it 'given two numbers returns quotient of the first number divided by the second number' do
+      num1 = 42
+      num2 = 7
+      
+      expect(division(num1,num2)).to eq(6)
+    end
   end
 
-  # 2.
-  it 'has a concept of truth' do 
-    expect("a")
-    # alternatively
-    # expect(true)
-    # expect(1)
-    # expect([])
+  describe '#assign_variable' do
+    it 'should take an argument of a persons name and assign it to a variable name' do
+      value = "Bob"
+
+      expect(assign_variable(value)).to eq(value)
+    end
   end
 
-  # 3. 
-  it 'knows math' do
-    expect(42).to eq(6*7)
+  describe '#argue' do
+    it 'should add an argument to the method argue' do
+      phrase = "I'm right and you are wrong!"
+      
+      expect(argue(phrase)).to eq(phrase)
+    end  
   end
 
-  # 4. 
-  it 'can remember values with variables' do
-    the_number_one = 1
+  describe '#greeting' do
+    it 'should take in two arguments' do
+      greeting = "Hi there, "
+      name = "Bobby!"
 
-    expect(the_number_one).to eq(1) 
-  end
-
-  # 5. 
-  it 'variables are references to values' do
-    original = 1
-    reference = original
-
-    original = 2
-
-    expect(reference).to eq(1)
-  end
-
-  # 6. 
-  it 'has methods' do
-
-    class Object
-      # define a method named "defined_method"
-      # within this class.
-
-      def defined_method
-      end
-
+      expect{ greeting(greeting, name) }.to_not raise_error
     end
 
-    expect(Object).to respond_to(:defined_method)
+    it 'should raise an error with one argument' do
+      greeting = "Hi there, "
+
+      expect{ greeting(greeting)}.to raise_error
+    end
   end
 
-  # 7. 
-  it 'has methods that can accept arguments' do
-    # Replace the __ below with code to make the test pass
-    def work(adjective)
-      expect(adjective).to eq("hard")
+  describe '#return_a_value' do
+    it 'return the phrase "Nice"' do
+      expect(return_a_value).to eq("Nice")
+    end
+  end
+
+  describe '#last_evaluated_value' do
+    it 'return the phrase "expert"' do
+      expect(last_evaluated_value).to eq("expert")
+    end
+  end
+
+  describe '#pizza_party' do
+    it 'return optional method cheese' do
+      expect(pizza_party).to eq("cheese")
     end
 
-    work("hard")
-  end
-
-  # 8. 
-  it 'has methods that can accept multiple arguments' do
-
-    class Object
-      # define a method named "a_method_with" that takes two arguments
-      # within this class.
-      def a_method_with(two, arguments)
-      end
+    it 'return optional method pepperoni' do
+      expect(pizza_party("pepperoni")).to eq("pepperoni")
     end
-
-    expect(Object).to respond_to(:a_method_with).with(2).arguments
   end
-
-  # 9. 
-  it 'has methods that return values' do
-    # define a method named "always_be" that returns "Nice"
-    def always_be
-      "Nice"
-    end
-
-    expect(always_be).to eq("Nice")
-  end
-
-  # 10. 
-  it 'return values are always the last evaluated statement' do
-    def learning
-      "beginner"
-      "expert"
-    end
-
-    expect(learning).to eq("expert")
-  end
-
-  # 11.
-  it 'can have optional method arguments' do
-    def keep(state = "calm")
-      state
-    end
-
-    expect(keep).to eq("calm")
-  end
-
 end
