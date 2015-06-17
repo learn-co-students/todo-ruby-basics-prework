@@ -15,12 +15,10 @@ Review your understanding of
 
 1. Fork this repository and clone your fork.
 
-2. If you haven't yet install Rspec.
-
-From your terminal, type `gem install rspec`. You should see something like:
+2. From your terminal, type `gem install learn-co`. You should see something like:
 
 ```
-Successfully installed rspec-3.1.7
+Successfully installed learn-co-[version number]
 1 gem installed
 ```
 
