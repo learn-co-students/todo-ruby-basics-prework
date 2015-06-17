@@ -1,10 +1,15 @@
----
-  tags: todo, basics, tdd
-  languages: ruby
-  resources: 2
----
 
 # TODO: Ruby Basics
+
+## Objectives
+
+Review your understanding of 
+
+* defining methods 
+* defining methods with default argument
+* assigning variables
+* return values
+
 
 ## Instructions
 
@@ -19,11 +24,8 @@ Successfully installed learn-co-[version number]
 
 If not, ask a question in Learn.
 
-3. Run the script from your terminal with: `ruby ruby_basics.rb`. (Make sure you are in the right directory!)
 
-4. Follow the interactive readme.
+3. Write your solutions in lib/ruby_basics.rb file
 
-5. When you're finished, open up a pull request.
 
-Note: We're going to be putting a big focus on test driven development. We'll cover it a bunch more later, but in essence, this means that we write tests for our code before actually writing any code. Usually you'll make the tests pass by actually writing code, but in this case you'll be exploring Ruby by altering the tests themselves in `spec/ruby_basics_spec.rb`.
-
+4. When you're finished, open up a pull request.
