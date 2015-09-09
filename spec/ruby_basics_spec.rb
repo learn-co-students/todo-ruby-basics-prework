@@ -57,11 +57,11 @@ describe "ruby" do
   end
 
   describe '#pizza_party' do
-    it 'return optional method cheese' do
+    it 'has an optional argument that defaults to cheese and returns "cheese" when called with no arguments' do
       expect(pizza_party).to eq("cheese")
     end
 
-    it 'return optional method pepperoni' do
+    it 'returns the string passed in as an argument when called with an argument' do
       expect(pizza_party("pepperoni")).to eq("pepperoni")
     end
   end
