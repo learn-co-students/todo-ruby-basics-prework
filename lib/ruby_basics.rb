@@ -11,7 +11,7 @@ def argue(hrm)
 end
 
 def greeting(arg1, arg2)
-
+ return "Hello #{arg1}, how is #{arg2}?"
 end
 
 def return_a_value
