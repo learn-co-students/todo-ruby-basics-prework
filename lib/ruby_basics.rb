@@ -19,7 +19,8 @@ def return_a_value
 end
 
 def last_evaluated_value
-  return "expert"
+  "the requirements for this method were a bit too vague."
+  "expert"
 end
 
 def pizza_party(topping = "cheese")
