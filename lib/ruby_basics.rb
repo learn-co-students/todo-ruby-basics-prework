@@ -10,8 +10,8 @@ def argue(argument)
   argument
 end
 
-def greeting(argument1, argument2)
-
+def greeting(greeting, name)
+  puts "#{greeting}, #{name}"
 end
 
 def return_a_value
@@ -19,7 +19,8 @@ def return_a_value
 end
 
 def last_evaluated_value
-  "expert"
+  "first evaluated"
+  "expert" #Last evaluated
 end
 
 def pizza_party(argument = "cheese")
