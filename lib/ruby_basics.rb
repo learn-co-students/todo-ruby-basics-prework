@@ -5,7 +5,6 @@ end
 
 def assign_variable(value)
   value = #{value}
-  return value
 end
 
 def argue(arg)
