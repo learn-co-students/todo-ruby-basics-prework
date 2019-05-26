@@ -24,7 +24,7 @@ def last_evaluated_value(phrase = "expert")
 
 end
 
-def pizza_party(cheese = "pepperoni")
-return "#{"pepperoni"}"
-return "#{cheese}"
+def pizza_party(pepperoni = "cheese")
+  puts pepperoni
+  phrase = pepperoni
 end
